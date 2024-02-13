@@ -1,0 +1,9 @@
+common adb command
+
+## show installed packages
+$ adb shell pm list packages | sort 
+
+## To delete packate you want
+$ adb shell pm uninstall COM.DELTE.PACKAGENAME
+  or
+$ adb shell pm uninstall -k --user 0 COM.DELTE.PACKAGENAME
